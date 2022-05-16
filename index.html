@@ -27,7 +27,9 @@
 </head>
 	<body>
 		<header>
+
 			<div class="agp"><h1></h1></div>
+			<div class="agp"><p class="li"></p></div>
 		</header>
 		<section>
 			<video width="320" height="240" controls>
@@ -38,6 +40,30 @@
 				<embed src="movie.swf" width="320" height="240">
 			  </object>
 			</video>
+			<form id="contact">
+
+				  <p class="info_form">I campi con  <span class="asterisco">(*)</span> sono obbligatori.</p>
+
+				  <label for="nome">Nome <span class="asterisco">(*)</span></label>
+				  <input type="text" name="nome" id="nome"  placeholder="Il tuo nome"  style="width:98%;" />
+
+				  <label for="Email">Email <span class="asterisco">(*)</span></label>
+				  <input type="text" name="email" id="email"  placeholder="Digita la tua email"  style="width:98%;" />
+
+				  <label for="oggetto">Oggetto <span class="asterisco">(*)</span></label>
+				  <input type="text"  name="oggetto" id="oggetto"  placeholder="Di che tipo di informazione hai bisogno?"  style="width:98%;"  />
+
+				  <label for="messaggio">Richiesta <span class="asterisco">(*)</span></label>
+				  <textarea cols="50" rows="10" name="messaggio" id="messaggio"  placeholder="La tua richiesta" style="width:98%;" ></textarea>
+
+				  <input type="checkbox" name="informativa" id="informativa" value="informativa" checked="checked"/> Accetto <a href="#" title="leggi la nostra informativa" class="informativa_link">l'informativa sulla privacy</a>.<br />
+
+				  <input type="text" id="fred" name="fred" style="display:none;"/>
+				  <br />
+
+				  <input class="btn" type="button" id="bottone-contact" value="Invia Richiesta" />
+
+			   </form>
 		</section>
 		<footer>
 			<div class="class"></div>
